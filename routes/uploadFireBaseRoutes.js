@@ -1,5 +1,5 @@
 import express  from 'express' 
-import Multer  from 'Multer'
+import Multer  from 'multer'
 import FirebaseStorage  from 'multer-firebase-storage'
 
 const router = express.Router()
