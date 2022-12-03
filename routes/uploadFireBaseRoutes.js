@@ -18,7 +18,7 @@ const multer = Multer({
 
 
 router.post('/',multer.single('image'), (req,res) => {
-    console.log(req.file)
+    console.log(req.file.fileRef)
     res.send(`${req.file.fileRef}`)
 })
 
