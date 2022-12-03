@@ -19,7 +19,6 @@ const multer = Multer({
 
 
 router.post('/',multer.single('image'), (req,res) => {
-    console.log(req.file)
     res.send(`${req.file.publicUrl}`)
 })
 
