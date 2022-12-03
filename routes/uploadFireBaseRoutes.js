@@ -18,7 +18,7 @@ const multer = Multer({
 
 
 router.post('/',multer.single('image'), (req,res) => {
-    res.send(`/${req.file.path}`)
+    res.send(`${req.file}`)
 })
 
 export default router
